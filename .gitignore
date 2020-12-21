@@ -1,0 +1,6 @@
+package/include/wasm_own.h
+target/
+vendor/
+.php_cs.cache
+composer.lock
+Cargo.lock

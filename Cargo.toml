@@ -1,0 +1,19 @@
+[package]
+publish = false
+name = "wasmer-php-ffi"
+version = "0.2.0"
+authors = ["Wasmer Engineering Team <engineering@wasmer.io>"]
+edition = "2018"
+description = "Go library to run WebAssembly binaries"
+readme = "README.md"
+repository = "https://github.com/wasmerio/wasmer-go"
+keywords = ["golang", "extension", "webassembly"]
+categories = ["wasm"]
+
+[lib]
+crate-type = ["cdylib"]
+path = "lib/lib.rs"
+
+[dependencies]
+wasmer = "1.0.0-beta2"
+wasmer-c-api = "1.0.0-beta2"

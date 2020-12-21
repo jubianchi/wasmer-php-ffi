@@ -1,0 +1,36 @@
+{
+    "name": "jubianchi/wasmer-php-ffi",
+    "version": "1.0.0-beta1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jubianchi",
+            "email": "julien@wasmer.io"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "ext-ffi": "*"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^4.1",
+        "friendsofphp/php-cs-fixer": "^3.0.x-dev"
+    },
+    "suggest": {
+        "ext-mbstring": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wasmer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "files": [
+            "init.php"
+        ]
+    },
+    "scripts": {
+        "cs": "php-cs-fixer",
+        "psalm": "psalm --no-cache"
+    }
+}
